@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box; /* Isso ajuda a ajustar o tamanho dos elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra da página */
+    margin: 0; /* Remove margens do corpo */
+    padding: 20px; /* Adiciona espaço ao redor do corpo */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Espaço interno do container */
+    background: white; /* Fundo branco para o container */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do título */
+}
+
+.players {
+    display: flex; /* Usa flexbox para organizar os jogadores */
+    justify-content: space-around; /* Espaça os jogadores uniformemente */
+    flex-wrap: wrap; /* Permite que os jogadores se movam para a próxima linha em telas menores */
+}
+
+.player {
+    flex: 1; /* Cada jogador ocupa espaço igual */
+    margin: 10px; /* Margem entre os jogadores */
+    padding: 10px; /* Espaço interno do jogador */
+    background-color: #e7e7e7; /* Fundo cinza claro */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center; /* Centraliza o texto */
+}
+
+img {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 50%; /* Faz a imagem redonda */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+button {
+    padding: 10px; /* Espaço interno dos botões */
+    margin: 5px; /* Margem entre os botões */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+button:hover {
+    background-color: #45a049; /* Muda a cor do botão ao passar o mouse */
+}
+
+.life {
+    font-size: 20px; /* Tamanho da fonte da vida */
+    margin-bottom: 10px; /* Espaço abaixo da vida */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .players {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        align-items: center; /* Centraliza os jogadores */
+    }
+
+    button {
+        width: 100%; /* Botões ocupam 100% da largura */
+    }
+} 

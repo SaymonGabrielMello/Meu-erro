@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha em cards</title>
+    <!-- Chamando css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chamando o script -->
+    <script src="script.js" defer></script>
+    <!-- Colocando Favicons -->
+    <link rel="icon" type="image/png" href="lutar.png">
+</head>
+<body>
+    <div class="container">
+        <h1> Batalha dos mais fortes 💀</h1>
+    </div>
+    <div class="players">
+        <!-- Jogador 1 -->
+        <div id="player1" class="player">
+            <H2> O Mais Honrado </H2>
+            <img src="satoro.jpeg">
+            <div class="life" id="life1">💚100</div>
+            <button onclick="ataque('player1','player2','pancada')">👊🏻</button>
+            <button onclick="ataque('player1','player1', 'chute')">🦶🏻</button>
+            <button onclick="ataque('player1','player2','especial')">🤞🏻♾️🌌</button>
+            <button onclick="defender('player1')">🛡</button>
+        </div>
+    </div>
+     <!-- Jogador 2 -->
+    
+     <div class="players">
+        <!-- Jogador 1 -->
+        <div id="player2" class="player">
+            <H2> Rei Das Maldições </H2>
+            <img src="sukuna.jpeg">
+            <div class="life" id="life2">💚100</div>
+            <button onclick="ataque('player2','player1','pancada')">👊🏼</button>
+            <button onclick="ataque('player2','player1', 'chute')">🦶🏼</button>
+            <button onclick="ataque('player2','player1','especial')">⛩️🏯🙏🏻</button>
+            <button onclick="defender('player2')">🛡</button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    
+</body>
+</html>
